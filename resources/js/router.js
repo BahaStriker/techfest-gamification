@@ -4,6 +4,7 @@ import VueRouter from "vue-router";
 import home from "./components/home";
 import list from "./components/games/list";
 import index from "./components/games/index";
+import profile from "./components/profile";
 
 Vue.use(VueRouter);
 
@@ -14,6 +15,11 @@ export default new VueRouter({
         {
             path: "/game/:id",
             component: index,
+            meta: { requiresAuth: true }
+        },
+        {
+            path: "/profile/:id",
+            component: profile,
             meta: { requiresAuth: true }
         },
     ],
