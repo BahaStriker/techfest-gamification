@@ -1899,6 +1899,630 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/games/index.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/games/index.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/games/list.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/games/list.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/***/ }),
+
 /***/ "./node_modules/bootstrap/dist/js/bootstrap.js":
 /*!*****************************************************!*\
   !*** ./node_modules/bootstrap/dist/js/bootstrap.js ***!
@@ -37254,6 +37878,1703 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/games/index.vue?vue&type=template&id=054fed09&":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/games/index.vue?vue&type=template&id=054fed09& ***!
+  \**************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("main", [
+      _c("section", { staticClass: "courses", attrs: { id: "hero_in" } }, [
+        _c("div", { staticClass: "wrapper" }, [
+          _c("div", { staticClass: "container" }, [
+            _c("h1", { staticClass: "fadeInUp" }, [
+              _c("span"),
+              _vm._v("Online course detail")
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "bg_color_1" }, [
+        _c("nav", { staticClass: "secondary_nav sticky_horizontal" }, [
+          _c("div", { staticClass: "container" }, [
+            _c("ul", { staticClass: "clearfix" }, [
+              _c("li", [
+                _c(
+                  "a",
+                  { staticClass: "active", attrs: { href: "#description" } },
+                  [_vm._v("Description")]
+                )
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _c("a", { attrs: { href: "#lessons" } }, [_vm._v("Lessons")])
+              ]),
+              _vm._v(" "),
+              _c("li", [
+                _c("a", { attrs: { href: "#reviews" } }, [_vm._v("Reviews")])
+              ])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "container margin_60_35" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "col-lg-8" }, [
+              _c("section", { attrs: { id: "description" } }, [
+                _c("h2", [_vm._v("Description")]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "Per consequat adolescens ex, cu nibh commune temporibus vim, ad sumo viris eloquentiam sed. Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id est, ei timeam inimicus sed. Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis, tamquam vulputate pertinacia eum at."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("h5", [_vm._v("What will you learn")]),
+                _vm._v(" "),
+                _c("ul", { staticClass: "list_ok" }, [
+                  _c("li", [
+                    _c("h6", [_vm._v("Suas summo id sed erat erant oporteat")]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "Ut unum diceret eos, mel cu velit principes, ut quo inani dolorem mediocritatem. Mea in justo posidonium necessitatibus."
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c("h6", [_vm._v("Illud singulis indoctum ad sed")]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "Ut unum diceret eos, mel cu velit principes, ut quo inani dolorem mediocritatem. Mea in justo posidonium necessitatibus."
+                      )
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c("h6", [_vm._v("Alterum bonorum mentitum an mel")]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "Ut unum diceret eos, mel cu velit principes, ut quo inani dolorem mediocritatem. Mea in justo posidonium necessitatibus."
+                      )
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("hr"),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "Mea appareat omittantur eloquentiam ad, nam ei quas oportere democritum. Prima causae admodum id est, ei timeam inimicus sed. Sit an meis aliquam, cetero inermis vel ut. An sit illum euismod facilisis, tamquam vulputate pertinacia eum at."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "row" }, [
+                  _c("div", { staticClass: "col-lg-6" }, [
+                    _c("ul", { staticClass: "bullets" }, [
+                      _c("li", [_vm._v("Dolorem mediocritatem")]),
+                      _vm._v(" "),
+                      _c("li", [_vm._v("Mea appareat")]),
+                      _vm._v(" "),
+                      _c("li", [_vm._v("Prima causae")]),
+                      _vm._v(" "),
+                      _c("li", [_vm._v("Singulis indoctum")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-lg-6" }, [
+                    _c("ul", { staticClass: "bullets" }, [
+                      _c("li", [_vm._v("Timeam inimicus")]),
+                      _vm._v(" "),
+                      _c("li", [_vm._v("Oportere democritum")]),
+                      _vm._v(" "),
+                      _c("li", [_vm._v("Cetero inermis")]),
+                      _vm._v(" "),
+                      _c("li", [_vm._v("Pertinacia eum")])
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("section", { attrs: { id: "lessons" } }, [
+                _c("div", { staticClass: "intro_title" }, [
+                  _c("h2", [_vm._v("Lessons")]),
+                  _vm._v(" "),
+                  _c("ul", [
+                    _c("li", [_vm._v("18 lessons")]),
+                    _vm._v(" "),
+                    _c("li", [_vm._v("01:02:10")])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "add_bottom_45",
+                    attrs: { id: "accordion_lessons", role: "tablist" }
+                  },
+                  [
+                    _c("div", { staticClass: "card" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "card-header",
+                          attrs: { role: "tab", id: "headingOne" }
+                        },
+                        [
+                          _c("h5", { staticClass: "mb-0" }, [
+                            _c(
+                              "a",
+                              {
+                                attrs: {
+                                  "data-toggle": "collapse",
+                                  href: "#collapseOne",
+                                  "aria-expanded": "true",
+                                  "aria-controls": "collapseOne"
+                                }
+                              },
+                              [
+                                _c("i", { staticClass: "indicator ti-minus" }),
+                                _vm._v(" Introdocution")
+                              ]
+                            )
+                          ])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "collapse show",
+                          attrs: {
+                            id: "collapseOne",
+                            role: "tabpanel",
+                            "aria-labelledby": "headingOne",
+                            "data-parent": "#accordion_lessons"
+                          }
+                        },
+                        [
+                          _c("div", { staticClass: "card-body" }, [
+                            _c("div", { staticClass: "list_lessons" }, [
+                              _c("ul", [
+                                _c("li", [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "video",
+                                      attrs: {
+                                        href:
+                                          "https://www.youtube.com/watch?v=LDgd_gUcqCw"
+                                      }
+                                    },
+                                    [_vm._v("Health Science")]
+                                  ),
+                                  _c("span", [_vm._v("00:59")])
+                                ]),
+                                _vm._v(" "),
+                                _c("li", [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "video",
+                                      attrs: {
+                                        href:
+                                          "https://www.youtube.com/watch?v=LDgd_gUcqCw"
+                                      }
+                                    },
+                                    [_vm._v("Health and Social Care")]
+                                  ),
+                                  _c("span", [_vm._v("00:59")])
+                                ]),
+                                _vm._v(" "),
+                                _c("li", [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "txt_doc",
+                                      attrs: { href: "#0" }
+                                    },
+                                    [_vm._v("Audiology")]
+                                  ),
+                                  _c("span", [_vm._v("00:59")])
+                                ])
+                              ])
+                            ])
+                          ])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "card" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "card-header",
+                          attrs: { role: "tab", id: "headingTwo" }
+                        },
+                        [
+                          _c("h5", { staticClass: "mb-0" }, [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "collapsed",
+                                attrs: {
+                                  "data-toggle": "collapse",
+                                  href: "#collapseTwo",
+                                  "aria-expanded": "false",
+                                  "aria-controls": "collapseTwo"
+                                }
+                              },
+                              [
+                                _c("i", { staticClass: "indicator ti-plus" }),
+                                _vm._v(
+                                  "Generative Modeling Review\n                                        "
+                                )
+                              ]
+                            )
+                          ])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "collapse",
+                          attrs: {
+                            id: "collapseTwo",
+                            role: "tabpanel",
+                            "aria-labelledby": "headingTwo",
+                            "data-parent": "#accordion_lessons"
+                          }
+                        },
+                        [
+                          _c("div", { staticClass: "card-body" }, [
+                            _c("div", { staticClass: "list_lessons" }, [
+                              _c("ul", [
+                                _c("li", [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "video",
+                                      attrs: {
+                                        href:
+                                          "https://www.youtube.com/watch?v=LDgd_gUcqCw"
+                                      }
+                                    },
+                                    [_vm._v("Health Science")]
+                                  ),
+                                  _c("span", [_vm._v("00:59")])
+                                ]),
+                                _vm._v(" "),
+                                _c("li", [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "video",
+                                      attrs: {
+                                        href:
+                                          "https://www.youtube.com/watch?v=LDgd_gUcqCw"
+                                      }
+                                    },
+                                    [_vm._v("Health and Social Care")]
+                                  ),
+                                  _c("span", [_vm._v("00:59")])
+                                ]),
+                                _vm._v(" "),
+                                _c("li", [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "video",
+                                      attrs: {
+                                        href:
+                                          "https://www.youtube.com/watch?v=LDgd_gUcqCw"
+                                      }
+                                    },
+                                    [_vm._v("History")]
+                                  ),
+                                  _c("span", [_vm._v("00:59")])
+                                ]),
+                                _vm._v(" "),
+                                _c("li", [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "video",
+                                      attrs: {
+                                        href:
+                                          "https://www.youtube.com/watch?v=LDgd_gUcqCw"
+                                      }
+                                    },
+                                    [_vm._v("Healthcare Science")]
+                                  ),
+                                  _c("span", [_vm._v("00:59")])
+                                ]),
+                                _vm._v(" "),
+                                _c("li", [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "txt_doc",
+                                      attrs: { href: "#0" }
+                                    },
+                                    [_vm._v("Audiology")]
+                                  ),
+                                  _c("span", [_vm._v("00:59")])
+                                ])
+                              ])
+                            ])
+                          ])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "card" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "card-header",
+                          attrs: { role: "tab", id: "headingThree" }
+                        },
+                        [
+                          _c("h5", { staticClass: "mb-0" }, [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "collapsed",
+                                attrs: {
+                                  "data-toggle": "collapse",
+                                  href: "#collapseThree",
+                                  "aria-expanded": "false",
+                                  "aria-controls": "collapseThree"
+                                }
+                              },
+                              [
+                                _c("i", { staticClass: "indicator ti-plus" }),
+                                _vm._v(
+                                  "Variational Autoencoders\n                                        "
+                                )
+                              ]
+                            )
+                          ])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "collapse",
+                          attrs: {
+                            id: "collapseThree",
+                            role: "tabpanel",
+                            "aria-labelledby": "headingThree",
+                            "data-parent": "#accordion_lessons"
+                          }
+                        },
+                        [
+                          _c("div", { staticClass: "card-body" }, [
+                            _c("div", { staticClass: "list_lessons" }, [
+                              _c("ul", [
+                                _c("li", [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "video",
+                                      attrs: {
+                                        href:
+                                          "https://www.youtube.com/watch?v=LDgd_gUcqCw"
+                                      }
+                                    },
+                                    [_vm._v("Health Science")]
+                                  ),
+                                  _c("span", [_vm._v("00:59")])
+                                ]),
+                                _vm._v(" "),
+                                _c("li", [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "video",
+                                      attrs: {
+                                        href:
+                                          "https://www.youtube.com/watch?v=LDgd_gUcqCw"
+                                      }
+                                    },
+                                    [_vm._v("Health and Social Care")]
+                                  ),
+                                  _c("span", [_vm._v("00:59")])
+                                ]),
+                                _vm._v(" "),
+                                _c("li", [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "video",
+                                      attrs: {
+                                        href:
+                                          "https://www.youtube.com/watch?v=LDgd_gUcqCw"
+                                      }
+                                    },
+                                    [_vm._v("History")]
+                                  ),
+                                  _c("span", [_vm._v("00:59")])
+                                ]),
+                                _vm._v(" "),
+                                _c("li", [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "video",
+                                      attrs: {
+                                        href:
+                                          "https://www.youtube.com/watch?v=LDgd_gUcqCw"
+                                      }
+                                    },
+                                    [_vm._v("Healthcare Science")]
+                                  ),
+                                  _c("span", [_vm._v("00:59")])
+                                ]),
+                                _vm._v(" "),
+                                _c("li", [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "txt_doc",
+                                      attrs: { href: "#0" }
+                                    },
+                                    [_vm._v("Audiology")]
+                                  ),
+                                  _c("span", [_vm._v("00:59")])
+                                ])
+                              ])
+                            ])
+                          ])
+                        ]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "card" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "card-header",
+                          attrs: { role: "tab", id: "headingFourth" }
+                        },
+                        [
+                          _c("h5", { staticClass: "mb-0" }, [
+                            _c(
+                              "a",
+                              {
+                                staticClass: "collapsed",
+                                attrs: {
+                                  "data-toggle": "collapse",
+                                  href: "#collapseFourth",
+                                  "aria-expanded": "false",
+                                  "aria-controls": "collapseFourth"
+                                }
+                              },
+                              [
+                                _c("i", { staticClass: "indicator ti-plus" }),
+                                _vm._v(
+                                  "Gaussian Mixture Model Review\n                                        "
+                                )
+                              ]
+                            )
+                          ])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "collapse",
+                          attrs: {
+                            id: "collapseFourth",
+                            role: "tabpanel",
+                            "aria-labelledby": "headingFourth",
+                            "data-parent": "#accordion_lessons"
+                          }
+                        },
+                        [
+                          _c("div", { staticClass: "card-body" }, [
+                            _c("div", { staticClass: "list_lessons" }, [
+                              _c("ul", [
+                                _c("li", [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "video",
+                                      attrs: {
+                                        href:
+                                          "https://www.youtube.com/watch?v=LDgd_gUcqCw"
+                                      }
+                                    },
+                                    [_vm._v("Health Science")]
+                                  ),
+                                  _c("span", [_vm._v("00:59")])
+                                ]),
+                                _vm._v(" "),
+                                _c("li", [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "video",
+                                      attrs: {
+                                        href:
+                                          "https://www.youtube.com/watch?v=LDgd_gUcqCw"
+                                      }
+                                    },
+                                    [_vm._v("Health and Social Care")]
+                                  ),
+                                  _c("span", [_vm._v("00:59")])
+                                ]),
+                                _vm._v(" "),
+                                _c("li", [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "video",
+                                      attrs: {
+                                        href:
+                                          "https://www.youtube.com/watch?v=LDgd_gUcqCw"
+                                      }
+                                    },
+                                    [_vm._v("History")]
+                                  ),
+                                  _c("span", [_vm._v("00:59")])
+                                ]),
+                                _vm._v(" "),
+                                _c("li", [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "video",
+                                      attrs: {
+                                        href:
+                                          "https://www.youtube.com/watch?v=LDgd_gUcqCw"
+                                      }
+                                    },
+                                    [_vm._v("Healthcare Science")]
+                                  ),
+                                  _c("span", [_vm._v("00:59")])
+                                ]),
+                                _vm._v(" "),
+                                _c("li", [
+                                  _c(
+                                    "a",
+                                    {
+                                      staticClass: "txt_doc",
+                                      attrs: { href: "#0" }
+                                    },
+                                    [_vm._v("Audiology")]
+                                  ),
+                                  _c("span", [_vm._v("00:59")])
+                                ])
+                              ])
+                            ])
+                          ])
+                        ]
+                      )
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("section", { attrs: { id: "reviews" } }, [
+                _c("h2", [_vm._v("Reviews")]),
+                _vm._v(" "),
+                _c("div", { staticClass: "reviews-container" }, [
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-lg-3" }, [
+                      _c("div", { attrs: { id: "review_summary" } }, [
+                        _c("strong", [_vm._v("4.7")]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "rating" }, [
+                          _c("i", { staticClass: "icon_star voted" }),
+                          _c("i", { staticClass: "icon_star voted" }),
+                          _c("i", { staticClass: "icon_star voted" }),
+                          _c("i", { staticClass: "icon_star voted" }),
+                          _c("i", { staticClass: "icon_star" })
+                        ]),
+                        _vm._v(" "),
+                        _c("small", [_vm._v("Based on 4 reviews")])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "col-lg-9" }, [
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "col-lg-10 col-9" }, [
+                          _c("div", { staticClass: "progress" }, [
+                            _c("div", {
+                              staticClass: "progress-bar",
+                              staticStyle: { width: "90%" },
+                              attrs: {
+                                role: "progressbar",
+                                "aria-valuenow": "90",
+                                "aria-valuemin": "0",
+                                "aria-valuemax": "100"
+                              }
+                            })
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-lg-2 col-3" }, [
+                          _c("small", [_c("strong", [_vm._v("5 stars")])])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "col-lg-10 col-9" }, [
+                          _c("div", { staticClass: "progress" }, [
+                            _c("div", {
+                              staticClass: "progress-bar",
+                              staticStyle: { width: "95%" },
+                              attrs: {
+                                role: "progressbar",
+                                "aria-valuenow": "95",
+                                "aria-valuemin": "0",
+                                "aria-valuemax": "100"
+                              }
+                            })
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-lg-2 col-3" }, [
+                          _c("small", [_c("strong", [_vm._v("4 stars")])])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "col-lg-10 col-9" }, [
+                          _c("div", { staticClass: "progress" }, [
+                            _c("div", {
+                              staticClass: "progress-bar",
+                              staticStyle: { width: "60%" },
+                              attrs: {
+                                role: "progressbar",
+                                "aria-valuenow": "60",
+                                "aria-valuemin": "0",
+                                "aria-valuemax": "100"
+                              }
+                            })
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-lg-2 col-3" }, [
+                          _c("small", [_c("strong", [_vm._v("3 stars")])])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "col-lg-10 col-9" }, [
+                          _c("div", { staticClass: "progress" }, [
+                            _c("div", {
+                              staticClass: "progress-bar",
+                              staticStyle: { width: "20%" },
+                              attrs: {
+                                role: "progressbar",
+                                "aria-valuenow": "20",
+                                "aria-valuemin": "0",
+                                "aria-valuemax": "100"
+                              }
+                            })
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-lg-2 col-3" }, [
+                          _c("small", [_c("strong", [_vm._v("2 stars")])])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "row" }, [
+                        _c("div", { staticClass: "col-lg-10 col-9" }, [
+                          _c("div", { staticClass: "progress" }, [
+                            _c("div", {
+                              staticClass: "progress-bar",
+                              staticStyle: { width: "0" },
+                              attrs: {
+                                role: "progressbar",
+                                "aria-valuenow": "0",
+                                "aria-valuemin": "0",
+                                "aria-valuemax": "100"
+                              }
+                            })
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "col-lg-2 col-3" }, [
+                          _c("small", [_c("strong", [_vm._v("1 stars")])])
+                        ])
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("hr"),
+                _vm._v(" "),
+                _c("div", { staticClass: "reviews-container" }, [
+                  _c("div", { staticClass: "review-box clearfix" }, [
+                    _c("figure", { staticClass: "rev-thumb" }, [
+                      _c("img", {
+                        attrs: {
+                          src:
+                            "http://via.placeholder.com/150x150/ccc/fff/avatar1.jpg",
+                          alt: ""
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "rev-content" }, [
+                      _c("div", { staticClass: "rating" }, [
+                        _c("i", { staticClass: "icon_star voted" }),
+                        _c("i", { staticClass: "icon_star voted" }),
+                        _c("i", { staticClass: "icon_star voted" }),
+                        _c("i", { staticClass: "icon_star voted" }),
+                        _c("i", { staticClass: "icon_star" })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "rev-info" }, [
+                        _vm._v(
+                          "\n                                        Admin – April 03, 2016:\n                                    "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "rev-text" }, [
+                        _c("p", [
+                          _vm._v(
+                            "\n                                            Sed eget turpis a pede tempor malesuada. Vivamus quis mi at leo pulvinar hendrerit. Cum sociis natoque penatibus et magnis dis\n                                        "
+                          )
+                        ])
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "review-box clearfix" }, [
+                    _c("figure", { staticClass: "rev-thumb" }, [
+                      _c("img", {
+                        attrs: {
+                          src:
+                            "http://via.placeholder.com/150x150/ccc/fff/avatar2.jpg",
+                          alt: ""
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "rev-content" }, [
+                      _c("div", { staticClass: "rating" }, [
+                        _c("i", { staticClass: "icon-star voted" }),
+                        _c("i", { staticClass: "icon_star voted" }),
+                        _c("i", { staticClass: "icon_star voted" }),
+                        _c("i", { staticClass: "icon_star voted" }),
+                        _c("i", { staticClass: "icon_star" })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "rev-info" }, [
+                        _vm._v(
+                          "\n                                        Ahsan – April 01, 2016:\n                                    "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "rev-text" }, [
+                        _c("p", [
+                          _vm._v(
+                            "\n                                            Sed eget turpis a pede tempor malesuada. Vivamus quis mi at leo pulvinar hendrerit. Cum sociis natoque penatibus et magnis dis\n                                        "
+                          )
+                        ])
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "review-box clearfix" }, [
+                    _c("figure", { staticClass: "rev-thumb" }, [
+                      _c("img", {
+                        attrs: {
+                          src:
+                            "http://via.placeholder.com/150x150/ccc/fff/avatar3.jpg",
+                          alt: ""
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "rev-content" }, [
+                      _c("div", { staticClass: "rating" }, [
+                        _c("i", { staticClass: "icon-star voted" }),
+                        _c("i", { staticClass: "icon_star voted" }),
+                        _c("i", { staticClass: "icon_star voted" }),
+                        _c("i", { staticClass: "icon_star voted" }),
+                        _c("i", { staticClass: "icon_star" })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "rev-info" }, [
+                        _vm._v(
+                          "\n                                        Sara – March 31, 2016:\n                                    "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "rev-text" }, [
+                        _c("p", [
+                          _vm._v(
+                            "\n                                            Sed eget turpis a pede tempor malesuada. Vivamus quis mi at leo pulvinar hendrerit. Cum sociis natoque penatibus et magnis dis\n                                        "
+                          )
+                        ])
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("aside", { staticClass: "col-lg-4", attrs: { id: "sidebar" } }, [
+              _c("div", { staticClass: "box_detail" }, [
+                _c("figure", [
+                  _c(
+                    "a",
+                    {
+                      staticClass: "video",
+                      attrs: {
+                        href: "https://www.youtube.com/watch?v=LDgd_gUcqCw"
+                      }
+                    },
+                    [
+                      _c("i", { staticClass: "arrow_triangle-right" }),
+                      _c("img", {
+                        staticClass: "img-fluid",
+                        attrs: {
+                          src:
+                            "http://via.placeholder.com/800x533/ccc/fff/course_1.jpg",
+                          alt: ""
+                        }
+                      }),
+                      _c("span", [_vm._v("View course preview")])
+                    ]
+                  )
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "price" }, [
+                  _vm._v("\n                            $29"),
+                  _c("span", { staticClass: "original_price" }, [
+                    _c("em", [_vm._v("$49")]),
+                    _vm._v("60% discount price")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn_1 full-width",
+                    attrs: { href: "cart-1.html" }
+                  },
+                  [_vm._v("Purchase")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn_1 full-width outline",
+                    attrs: { href: "#0" }
+                  },
+                  [
+                    _c("i", { staticClass: "icon_heart" }),
+                    _vm._v(" Add to wishlist")
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", { attrs: { id: "list_feat" } }, [
+                  _c("h3", [_vm._v("What's includes")]),
+                  _vm._v(" "),
+                  _c("ul", [
+                    _c("li", [
+                      _c("i", { staticClass: "icon_mobile" }),
+                      _vm._v("Mobile support")
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("i", { staticClass: "icon_archive_alt" }),
+                      _vm._v("Lesson archive")
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("i", { staticClass: "icon_mobile" }),
+                      _vm._v("Mobile support")
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("i", { staticClass: "icon_chat_alt" }),
+                      _vm._v("Tutor chat")
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("i", { staticClass: "icon_document_alt" }),
+                      _vm._v("Course certificate")
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/games/list.vue?vue&type=template&id=51ddc9b7&":
+/*!*************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/games/list.vue?vue&type=template&id=51ddc9b7& ***!
+  \*************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("main", [
+      _c("section", { staticClass: "courses", attrs: { id: "hero_in" } }, [
+        _c("div", { staticClass: "wrapper" }, [
+          _c("div", { staticClass: "container" }, [
+            _c("h1", { staticClass: "fadeInUp" }, [
+              _c("span"),
+              _vm._v("Online courses")
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "filters_listing sticky_horizontal" }, [
+        _c("div", { staticClass: "container" }, [
+          _c("ul", { staticClass: "clearfix" }, [
+            _c("li", [
+              _c("div", { staticClass: "switch-field" }, [
+                _c("input", {
+                  attrs: {
+                    type: "radio",
+                    id: "all",
+                    name: "listing_filter",
+                    value: "all",
+                    checked: ""
+                  }
+                }),
+                _vm._v(" "),
+                _c("label", { attrs: { for: "all" } }, [_vm._v("All")]),
+                _vm._v(" "),
+                _c("input", {
+                  attrs: {
+                    type: "radio",
+                    id: "popular",
+                    name: "listing_filter",
+                    value: "popular"
+                  }
+                }),
+                _vm._v(" "),
+                _c("label", { attrs: { for: "popular" } }, [_vm._v("Popular")]),
+                _vm._v(" "),
+                _c("input", {
+                  attrs: {
+                    type: "radio",
+                    id: "latest",
+                    name: "listing_filter",
+                    value: "latest"
+                  }
+                }),
+                _vm._v(" "),
+                _c("label", { attrs: { for: "latest" } }, [_vm._v("Latest")])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c("div", { staticClass: "layout_view" }, [
+                _c("a", { staticClass: "active", attrs: { href: "#0" } }, [
+                  _c("i", { staticClass: "icon-th" })
+                ]),
+                _vm._v(" "),
+                _c("a", { attrs: { href: "courses-list.html" } }, [
+                  _c("i", { staticClass: "icon-th-list" })
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", [
+              _c(
+                "select",
+                { staticClass: "selectbox", attrs: { name: "orderby" } },
+                [
+                  _c("option", { attrs: { value: "category" } }, [
+                    _vm._v("Category")
+                  ]),
+                  _vm._v(" "),
+                  _c("option", { attrs: { value: "category 2" } }, [
+                    _vm._v("Literature")
+                  ]),
+                  _vm._v(" "),
+                  _c("option", { attrs: { value: "category 3" } }, [
+                    _vm._v("Architecture")
+                  ]),
+                  _vm._v(" "),
+                  _c("option", { attrs: { value: "category 4" } }, [
+                    _vm._v("Economy")
+                  ])
+                ]
+              )
+            ])
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "container margin_60_35" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("aside", { staticClass: "col-lg-3", attrs: { id: "sidebar" } }, [
+            _c("div", { attrs: { id: "filters_col" } }, [
+              _c(
+                "a",
+                {
+                  attrs: {
+                    "data-toggle": "collapse",
+                    href: "#collapseFilters",
+                    "aria-expanded": "false",
+                    "aria-controls": "collapseFilters",
+                    id: "filters_col_bt"
+                  }
+                },
+                [_vm._v("Filters ")]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "collapse show",
+                  attrs: { id: "collapseFilters" }
+                },
+                [
+                  _c("div", { staticClass: "filter_type" }, [
+                    _c("h6", [_vm._v("Category")]),
+                    _vm._v(" "),
+                    _c("ul", [
+                      _c("li", [
+                        _c("label", [
+                          _c("input", {
+                            staticClass: "icheck",
+                            attrs: { type: "checkbox", checked: "" }
+                          }),
+                          _vm._v("all "),
+                          _c("small", [_vm._v("(945)")])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c("label", [
+                          _c("input", {
+                            staticClass: "icheck",
+                            attrs: { type: "checkbox" }
+                          }),
+                          _vm._v("Architecture "),
+                          _c("small", [_vm._v("(45)")])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c("label", [
+                          _c("input", {
+                            staticClass: "icheck",
+                            attrs: { type: "checkbox" }
+                          }),
+                          _vm._v("Managment "),
+                          _c("small", [_vm._v("(30)")])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c("label", [
+                          _c("input", {
+                            staticClass: "icheck",
+                            attrs: { type: "checkbox" }
+                          }),
+                          _vm._v("Business "),
+                          _c("small", [_vm._v("(25)")])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c("label", [
+                          _c("input", {
+                            staticClass: "icheck",
+                            attrs: { type: "checkbox" }
+                          }),
+                          _vm._v("Litterature "),
+                          _c("small", [_vm._v("(56)")])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c("label", [
+                          _c("input", {
+                            staticClass: "icheck",
+                            attrs: { type: "checkbox" }
+                          }),
+                          _vm._v("Biology "),
+                          _c("small", [_vm._v("(10)")])
+                        ])
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "filter_type" }, [
+                    _c("h6", [_vm._v("Rating")]),
+                    _vm._v(" "),
+                    _c("ul", [
+                      _c("li", [
+                        _c("label", [
+                          _c("input", {
+                            staticClass: "icheck",
+                            attrs: { type: "checkbox" }
+                          }),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "rating" }, [
+                            _c("i", { staticClass: "icon_star voted" }),
+                            _c("i", { staticClass: "icon_star voted" }),
+                            _c("i", { staticClass: "icon_star voted" }),
+                            _c("i", { staticClass: "icon_star voted" }),
+                            _c("i", { staticClass: "icon_star voted" }),
+                            _vm._v(" "),
+                            _c("small", [_vm._v("(145)")])
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c("label", [
+                          _c("input", {
+                            staticClass: "icheck",
+                            attrs: { type: "checkbox" }
+                          }),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "rating" }, [
+                            _c("i", { staticClass: "icon_star voted" }),
+                            _c("i", { staticClass: "icon_star voted" }),
+                            _c("i", { staticClass: "icon_star voted" }),
+                            _c("i", { staticClass: "icon_star voted" }),
+                            _c("i", { staticClass: "icon_star" }),
+                            _vm._v(" "),
+                            _c("small", [_vm._v("(25)")])
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c("label", [
+                          _c("input", {
+                            staticClass: "icheck",
+                            attrs: { type: "checkbox" }
+                          }),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "rating" }, [
+                            _c("i", { staticClass: "icon_star voted" }),
+                            _c("i", { staticClass: "icon_star voted" }),
+                            _c("i", { staticClass: "icon_star voted" }),
+                            _c("i", { staticClass: "icon_star" }),
+                            _c("i", { staticClass: "icon_star" }),
+                            _vm._v(" "),
+                            _c("small", [_vm._v("(68)")])
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c("label", [
+                          _c("input", {
+                            staticClass: "icheck",
+                            attrs: { type: "checkbox" }
+                          }),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "rating" }, [
+                            _c("i", { staticClass: "icon_star voted" }),
+                            _c("i", { staticClass: "icon_star voted" }),
+                            _c("i", { staticClass: "icon_star" }),
+                            _c("i", { staticClass: "icon_star" }),
+                            _c("i", { staticClass: "icon_star" }),
+                            _vm._v(" "),
+                            _c("small", [_vm._v("(34)")])
+                          ])
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c("label", [
+                          _c("input", {
+                            staticClass: "icheck",
+                            attrs: { type: "checkbox" }
+                          }),
+                          _vm._v(" "),
+                          _c("span", { staticClass: "rating" }, [
+                            _c("i", { staticClass: "icon_star voted" }),
+                            _c("i", { staticClass: "icon_star" }),
+                            _c("i", { staticClass: "icon_star" }),
+                            _c("i", { staticClass: "icon_star" }),
+                            _c("i", { staticClass: "icon_star" }),
+                            _vm._v(" "),
+                            _c("small", [_vm._v("(10)")])
+                          ])
+                        ])
+                      ])
+                    ])
+                  ])
+                ]
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-lg-9" }, [
+            _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-md-6" }, [
+                _c("div", { staticClass: "box_grid wow" }, [
+                  _c("figure", { staticClass: "block-reveal" }, [
+                    _c("div", { staticClass: "block-horizzontal" }),
+                    _vm._v(" "),
+                    _c("a", { staticClass: "wish_bt", attrs: { href: "#0" } }),
+                    _vm._v(" "),
+                    _c("a", { attrs: { href: "course-detail.html" } }, [
+                      _c("img", {
+                        staticClass: "img-fluid",
+                        attrs: {
+                          src:
+                            "http://via.placeholder.com/800x533/ccc/fff/course__list_1.jpg",
+                          alt: ""
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "price" }, [_vm._v("$54")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "preview" }, [
+                      _c("span", [_vm._v("Preview course")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "wrapper" }, [
+                    _c("small", [_vm._v("Category")]),
+                    _vm._v(" "),
+                    _c("h3", [_vm._v("Persius delenit has cu")]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu."
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "rating" }, [
+                      _c("i", { staticClass: "icon_star voted" }),
+                      _c("i", { staticClass: "icon_star voted" }),
+                      _c("i", { staticClass: "icon_star voted" }),
+                      _c("i", { staticClass: "icon_star" }),
+                      _c("i", { staticClass: "icon_star" }),
+                      _vm._v(" "),
+                      _c("small", [_vm._v("(145)")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("ul", [
+                    _c("li", [
+                      _c("i", { staticClass: "icon_clock_alt" }),
+                      _vm._v(" 1h 30min")
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("i", { staticClass: "icon_like" }),
+                      _vm._v(" 890")
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("a", { attrs: { href: "course-detail.html" } }, [
+                        _vm._v("Enroll now")
+                      ])
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-6" }, [
+                _c("div", { staticClass: "box_grid wow" }, [
+                  _c("figure", { staticClass: "block-reveal" }, [
+                    _c("div", { staticClass: "block-horizzontal" }),
+                    _vm._v(" "),
+                    _c("a", { staticClass: "wish_bt", attrs: { href: "#0" } }),
+                    _vm._v(" "),
+                    _c("a", { attrs: { href: "course-detail.html" } }, [
+                      _c("img", {
+                        staticClass: "img-fluid",
+                        attrs: {
+                          src:
+                            "http://via.placeholder.com/800x533/ccc/fff/course__list_2.jpg",
+                          alt: ""
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "price" }, [_vm._v("$39")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "preview" }, [
+                      _c("span", [_vm._v("Preview course")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "wrapper" }, [
+                    _c("small", [_vm._v("Category")]),
+                    _vm._v(" "),
+                    _c("h3", [_vm._v("At deseruisse scriptorem")]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu."
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "rating" }, [
+                      _c("i", { staticClass: "icon_star voted" }),
+                      _c("i", { staticClass: "icon_star voted" }),
+                      _c("i", { staticClass: "icon_star voted" }),
+                      _c("i", { staticClass: "icon_star" }),
+                      _c("i", { staticClass: "icon_star" }),
+                      _vm._v(" "),
+                      _c("small", [_vm._v("(145)")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("ul", [
+                    _c("li", [
+                      _c("i", { staticClass: "icon_clock_alt" }),
+                      _vm._v(" 1h 30min")
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("i", { staticClass: "icon_like" }),
+                      _vm._v(" 890")
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("a", { attrs: { href: "course-detail.html" } }, [
+                        _vm._v("Enroll now")
+                      ])
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-6" }, [
+                _c("div", { staticClass: "box_grid wow" }, [
+                  _c("figure", { staticClass: "block-reveal" }, [
+                    _c("div", { staticClass: "block-horizzontal" }),
+                    _vm._v(" "),
+                    _c("a", { staticClass: "wish_bt", attrs: { href: "#0" } }),
+                    _vm._v(" "),
+                    _c("a", { attrs: { href: "course-detail.html" } }, [
+                      _c("img", {
+                        staticClass: "img-fluid",
+                        attrs: {
+                          src:
+                            "http://via.placeholder.com/800x533/ccc/fff/course__list_3.jpg",
+                          alt: ""
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "price" }, [_vm._v("$40")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "preview" }, [
+                      _c("span", [_vm._v("Preview course")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "wrapper" }, [
+                    _c("small", [_vm._v("Category")]),
+                    _vm._v(" "),
+                    _c("h3", [_vm._v("Ea vel semper quaerendum")]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu."
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "rating" }, [
+                      _c("i", { staticClass: "icon_star voted" }),
+                      _c("i", { staticClass: "icon_star voted" }),
+                      _c("i", { staticClass: "icon_star voted" }),
+                      _c("i", { staticClass: "icon_star" }),
+                      _c("i", { staticClass: "icon_star" }),
+                      _vm._v(" "),
+                      _c("small", [_vm._v("(145)")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("ul", [
+                    _c("li", [
+                      _c("i", { staticClass: "icon_clock_alt" }),
+                      _vm._v(" 1h 30min")
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("i", { staticClass: "icon_like" }),
+                      _vm._v(" 890")
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("a", { attrs: { href: "course-detail.html" } }, [
+                        _vm._v("Enroll now")
+                      ])
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-6" }, [
+                _c("div", { staticClass: "box_grid wow" }, [
+                  _c("figure", { staticClass: "block-reveal" }, [
+                    _c("div", { staticClass: "block-horizzontal" }),
+                    _vm._v(" "),
+                    _c("a", { staticClass: "wish_bt", attrs: { href: "#0" } }),
+                    _vm._v(" "),
+                    _c("a", { attrs: { href: "course-detail.html" } }, [
+                      _c("img", {
+                        staticClass: "img-fluid",
+                        attrs: {
+                          src:
+                            "http://via.placeholder.com/800x533/ccc/fff/course__list_4.jpg",
+                          alt: ""
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "price" }, [_vm._v("$65")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "preview" }, [
+                      _c("span", [_vm._v("Preview course")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "wrapper" }, [
+                    _c("small", [_vm._v("Category")]),
+                    _vm._v(" "),
+                    _c("h3", [_vm._v("Ei has exerci graecis")]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu."
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "rating" }, [
+                      _c("i", { staticClass: "icon_star voted" }),
+                      _c("i", { staticClass: "icon_star voted" }),
+                      _c("i", { staticClass: "icon_star voted" }),
+                      _c("i", { staticClass: "icon_star" }),
+                      _c("i", { staticClass: "icon_star" }),
+                      _vm._v(" "),
+                      _c("small", [_vm._v("(145)")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("ul", [
+                    _c("li", [
+                      _c("i", { staticClass: "icon_clock_alt" }),
+                      _vm._v(" 1h 30min")
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("i", { staticClass: "icon_like" }),
+                      _vm._v(" 890")
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("a", { attrs: { href: "course-detail.html" } }, [
+                        _vm._v("Enroll now")
+                      ])
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-6" }, [
+                _c("div", { staticClass: "box_grid wow" }, [
+                  _c("figure", { staticClass: "block-reveal" }, [
+                    _c("div", { staticClass: "block-horizzontal" }),
+                    _vm._v(" "),
+                    _c("a", { staticClass: "wish_bt", attrs: { href: "#0" } }),
+                    _vm._v(" "),
+                    _c("a", { attrs: { href: "course-detail.html" } }, [
+                      _c("img", {
+                        staticClass: "img-fluid",
+                        attrs: {
+                          src:
+                            "http://via.placeholder.com/800x533/ccc/fff/course__list_5.jpg",
+                          alt: ""
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "price" }, [_vm._v("$35")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "preview" }, [
+                      _c("span", [_vm._v("Preview course")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "wrapper" }, [
+                    _c("small", [_vm._v("Category")]),
+                    _vm._v(" "),
+                    _c("h3", [_vm._v("Decore tractatos")]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu."
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "rating" }, [
+                      _c("i", { staticClass: "icon_star voted" }),
+                      _c("i", { staticClass: "icon_star voted" }),
+                      _c("i", { staticClass: "icon_star voted" }),
+                      _c("i", { staticClass: "icon_star" }),
+                      _c("i", { staticClass: "icon_star" }),
+                      _vm._v(" "),
+                      _c("small", [_vm._v("(145)")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("ul", [
+                    _c("li", [
+                      _c("i", { staticClass: "icon_clock_alt" }),
+                      _vm._v(" 1h 30min")
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("i", { staticClass: "icon_like" }),
+                      _vm._v(" 890")
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("a", { attrs: { href: "course-detail.html" } }, [
+                        _vm._v("Enroll now")
+                      ])
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-6" }, [
+                _c("div", { staticClass: "box_grid wow" }, [
+                  _c("figure", { staticClass: "block-reveal" }, [
+                    _c("div", { staticClass: "block-horizzontal" }),
+                    _vm._v(" "),
+                    _c("a", { staticClass: "wish_bt", attrs: { href: "#0" } }),
+                    _vm._v(" "),
+                    _c("a", { attrs: { href: "course-detail.html" } }, [
+                      _c("img", {
+                        staticClass: "img-fluid",
+                        attrs: {
+                          src:
+                            "http://via.placeholder.com/800x533/ccc/fff/course__list_6.jpg",
+                          alt: ""
+                        }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "price" }, [_vm._v("$47")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "preview" }, [
+                      _c("span", [_vm._v("Preview course")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "wrapper" }, [
+                    _c("small", [_vm._v("Category")]),
+                    _vm._v(" "),
+                    _c("h3", [_vm._v("Eam id legimus torquatos")]),
+                    _vm._v(" "),
+                    _c("p", [
+                      _vm._v(
+                        "Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu."
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "rating" }, [
+                      _c("i", { staticClass: "icon_star voted" }),
+                      _c("i", { staticClass: "icon_star voted" }),
+                      _c("i", { staticClass: "icon_star voted" }),
+                      _c("i", { staticClass: "icon_star" }),
+                      _c("i", { staticClass: "icon_star" }),
+                      _vm._v(" "),
+                      _c("small", [_vm._v("(145)")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("ul", [
+                    _c("li", [
+                      _c("i", { staticClass: "icon_clock_alt" }),
+                      _vm._v(" 1h 30min")
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("i", { staticClass: "icon_like" }),
+                      _vm._v(" 890")
+                    ]),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("a", { attrs: { href: "course-detail.html" } }, [
+                        _vm._v("Enroll now")
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/home.vue?vue&type=template&id=fa6affac&":
 /*!*******************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/home.vue?vue&type=template&id=fa6affac& ***!
@@ -53133,11 +55454,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_partials_header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/partials/header */ "./resources/js/components/partials/header.vue");
 /* harmony import */ var _components_partials_footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/partials/footer */ "./resources/js/components/partials/footer.vue");
 /* harmony import */ var _components_home__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/home */ "./resources/js/components/home.vue");
+/* harmony import */ var _components_games_list__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/games/list */ "./resources/js/components/games/list.vue");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
+
 
 
 
@@ -53148,7 +55471,8 @@ var app = new Vue({
   components: {
     Myheader: _components_partials_header__WEBPACK_IMPORTED_MODULE_2__["default"],
     Myfooter: _components_partials_footer__WEBPACK_IMPORTED_MODULE_3__["default"],
-    home: _components_home__WEBPACK_IMPORTED_MODULE_4__["default"]
+    home: _components_home__WEBPACK_IMPORTED_MODULE_4__["default"],
+    list: _components_games_list__WEBPACK_IMPORTED_MODULE_5__["default"]
   }
 });
 
@@ -53196,6 +55520,150 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/components/games/index.vue":
+/*!*************************************************!*\
+  !*** ./resources/js/components/games/index.vue ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _index_vue_vue_type_template_id_054fed09___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.vue?vue&type=template&id=054fed09& */ "./resources/js/components/games/index.vue?vue&type=template&id=054fed09&");
+/* harmony import */ var _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.vue?vue&type=script&lang=js& */ "./resources/js/components/games/index.vue?vue&type=script&lang=js&");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _index_vue_vue_type_template_id_054fed09___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _index_vue_vue_type_template_id_054fed09___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/games/index.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/games/index.vue?vue&type=script&lang=js&":
+/*!**************************************************************************!*\
+  !*** ./resources/js/components/games/index.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/games/index.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/games/index.vue?vue&type=template&id=054fed09&":
+/*!********************************************************************************!*\
+  !*** ./resources/js/components/games/index.vue?vue&type=template&id=054fed09& ***!
+  \********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_054fed09___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=template&id=054fed09& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/games/index.vue?vue&type=template&id=054fed09&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_054fed09___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_054fed09___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/games/list.vue":
+/*!************************************************!*\
+  !*** ./resources/js/components/games/list.vue ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _list_vue_vue_type_template_id_51ddc9b7___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./list.vue?vue&type=template&id=51ddc9b7& */ "./resources/js/components/games/list.vue?vue&type=template&id=51ddc9b7&");
+/* harmony import */ var _list_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./list.vue?vue&type=script&lang=js& */ "./resources/js/components/games/list.vue?vue&type=script&lang=js&");
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _list_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _list_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _list_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _list_vue_vue_type_template_id_51ddc9b7___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _list_vue_vue_type_template_id_51ddc9b7___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/games/list.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/games/list.vue?vue&type=script&lang=js&":
+/*!*************************************************************************!*\
+  !*** ./resources/js/components/games/list.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_list_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./list.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/games/list.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_list_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_list_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_list_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_list_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_list_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/games/list.vue?vue&type=template&id=51ddc9b7&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/components/games/list.vue?vue&type=template&id=51ddc9b7& ***!
+  \*******************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_list_vue_vue_type_template_id_51ddc9b7___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./list.vue?vue&type=template&id=51ddc9b7& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/games/list.vue?vue&type=template&id=51ddc9b7&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_list_vue_vue_type_template_id_51ddc9b7___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_list_vue_vue_type_template_id_51ddc9b7___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
 
 /***/ }),
 
@@ -53371,8 +55839,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
 /* harmony import */ var _components_home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/home */ "./resources/js/components/home.vue");
+/* harmony import */ var _components_games_list__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/games/list */ "./resources/js/components/games/list.vue");
+/* harmony import */ var _components_games_index__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/games/index */ "./resources/js/components/games/index.vue");
 
  //Components imports
+
+
 
 
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
@@ -53380,6 +55852,18 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODU
   routes: [{
     path: "/",
     component: _components_home__WEBPACK_IMPORTED_MODULE_2__["default"],
+    meta: {
+      requiresAuth: true
+    }
+  }, {
+    path: "/games/list",
+    component: _components_games_list__WEBPACK_IMPORTED_MODULE_3__["default"],
+    meta: {
+      requiresAuth: true
+    }
+  }, {
+    path: "/game/:id",
+    component: _components_games_index__WEBPACK_IMPORTED_MODULE_4__["default"],
     meta: {
       requiresAuth: true
     }
