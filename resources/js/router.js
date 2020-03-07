@@ -9,7 +9,7 @@ Vue.use(VueRouter);
 
 export default new VueRouter({
     routes: [
-        { path: "/", component: home, meta: { requiresAuth: true } },
+        { path: "/", component: home, meta: { requiresAuth: false } },
         { path: "/games/list", component: list, meta: { requiresAuth: true } },
         {
             path: "/game/:id",
