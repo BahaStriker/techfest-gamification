@@ -47,7 +47,11 @@
     <Myfooter></Myfooter>
 </div>
 
-
+@auth 
+<script>
+    window.user = @json(Auth::user());
+</script>
+@endauth
 <!-- COMMON SCRIPTS -->
 <script src="{{asset('js/app.js')}}"></script>
 <script src="{{asset('js/jquery-2.2.4.min.js')}}"></script>
