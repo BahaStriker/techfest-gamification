@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-lg-5 col-md-12 p-r-5">
                     <p><img src="/../img/logo.png" width="149" height="42" data-retina="true" alt=""></p>
-                    <p>Le site web et les services présents sur ces pages vous sont proposés par SlothLab</p>
+                    <p>The website and the services presented on these pages are offered to you by <strong>SlothLab</strong></p>
                 </div>
 
 
