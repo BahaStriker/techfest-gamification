@@ -51,23 +51,22 @@
 
         <div class="col-lg-9">
           <div class="row">
-            <div class="col-md-6" v-for="game in games" >
+            <div class="col-md-6" v-for="game in games">
               <div class="box_grid wow">
                 <figure class="block-reveal">
                   <div class="block-horizzontal"></div>
                   <a href="#0" class="wish_bt"></a>
-                  <a :href="game.link">
+                  <router-link :to="game.link">
                     <img :src="game.thumbNail" class="img-fluid" alt />
-                  </a>
-                  <div class="price">{{game.score}} / 10</div>
+                  </router-link>
                   <div class="preview">
                     <span>Preview course</span>
                   </div>
                 </figure>
                 <div class="wrapper">
                   <small>{{game.category}}</small>
-                  <h3>{{game.title}}</h3>
-                  <p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu.</p>
+                  <h3>{{game.name}}</h3>
+                  <p>{{game.description}}</p>
                 </div>
                 <ul>
                   <li>
@@ -75,7 +74,7 @@
                     {{game.like}}
                   </li>
                   <li>
-                    <a href="course-detail.html">Play Now</a>
+                    <router-link :to="game.link">Play Now</router-link>
                   </li>
                 </ul>
               </div>
@@ -93,59 +92,10 @@
 export default {
   data() {
     return {
-      games: [
-        {
-          name: "test1",
-          type: 1,
-          category: "math",
-          thumbNail:
-            "http://via.placeholder.com/800x533/ccc/fff/course__list_1.jpg",
-          description:
-            "Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu.",
-          link: "game/1",
-          score: 5,
-          like: 20
-        },
-        {
-          name: "test2",
-          type: 2,
-          category: "physics",
-          thumbNail:
-            "http://via.placeholder.com/800x533/ccc/fff/course__list_1.jpg",
-          description:
-            "Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu.",
-          link: "game/2",
-          score: 3,
-          like: 30
-        },
-        {
-          name: "test3",
-          type: 1,
-          category: "physics",
-          thumbNail:
-            "http://via.placeholder.com/800x533/ccc/fff/course__list_1.jpg",
-          description:
-            "Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu.",
-          link: "game/3",
-          score: 0,
-          like: 30
-        },
-        {
-          name: "test2",
-          type: 1,
-          category: "math",
-          thumbNail:
-            "http://via.placeholder.com/800x533/ccc/fff/course__list_1.jpg",
-          description:
-            "Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu.",
-          link: "game/4",
-          score: 0,
-          like: 22
-        }
-      ],
+      games: [],
       categories: {
-          math : 0,
-          physics: 0 
+        math: 0,
+        physics: 0
       }
     };
   },
@@ -160,9 +110,30 @@ export default {
           : 1;
       }
       console.log(this.categories);
+    },
+    loadData() {
+      axios
+        .get("http://127.0.0.1:8000/api/games")
+        .then(data => {
+          this.games = data.data.map(element => {
+            return {
+              id: element.id,
+              name: element.name,
+              type: element.type,
+              category: element.categ_id == 1 ? "math" : "physics",
+              thumbNail: "/img/" + element.thubnail,
+              description: element.description,
+              link: element.id.toString()
+            };
+          });
+        })
+        .catch(err => {
+          console.log(err);
+        });
     }
   },
-  created() {
+  async created() {
+    await this.loadData();
     this.getCategories();
   }
 };

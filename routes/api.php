@@ -19,3 +19,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('search/games', 'API\SearchController@show');
+Route::apiResources(['games' => 'API\GameController']);

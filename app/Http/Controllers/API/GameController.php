@@ -1,9 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\API;
 
-use App\game;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\game;
 
 class GameController extends Controller
 {
@@ -14,17 +15,8 @@ class GameController extends Controller
      */
     public function index()
     {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
+        $games = game::get();
+        return response()->json($games);
     }
 
     /**
@@ -41,33 +33,23 @@ class GameController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\game  $game
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(game $game)
+    public function show($id)
     {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\game  $game
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(game $game)
-    {
-        //
+        $game = game::find($id);
+        return response()->json($game);
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\game  $game
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, game $game)
+    public function update(Request $request, $id)
     {
         //
     }
@@ -75,10 +57,10 @@ class GameController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\game  $game
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(game $game)
+    public function destroy($id)
     {
         //
     }

@@ -7,7 +7,6 @@ import index from "./components/games/index";
 import profile from "./components/profile";
 import notfound from "./components/NotFound";
 
-
 Vue.use(VueRouter);
 
 export default new VueRouter({
@@ -15,7 +14,7 @@ export default new VueRouter({
         { path: "/", component: home, meta: { requiresAuth: false } },
         { path: "/games/list", component: list, meta: { requiresAuth: true } },
         {
-            path: "/game/:id",
+            path: "/games/:id",
             component: index,
             meta: { requiresAuth: true }
         },
