@@ -8,9 +8,11 @@
                     <form>
                         <div id="custom-search-input">
                             <div class="input-group">
-                                <input type="text" class=" search-query" placeholder="Ex. Architecture, Specialization...">
-                                <input type="submit" class="btn_search" value="Search">
+                                <input type="text" class="search-query" placeholder="Search for your favorite game" v-model="query" @keyup="searchit">
+                                <input type="submit" class="btn_search" value="Search" @click.prevent="searchit">
+                                <div class="search-query" style="background-color:white;" v-show="gamesResult.message === 'Success'">{{gamesResult.message}}</div>
                             </div>
+
                         </div>
                     </form>
                 </div>
@@ -251,12 +253,35 @@
     </main>
 </template>
 <script>
+import _ from 'lodash';
     export default {
+        data() {
+            return{
+                query: "",
+                gamesResult: {}
+            }
+        },
+        methods: {
+            searchit: _.debounce(() => {
+                Fire.$emit('searching');
+            },3000),
+        },
         mounted() {
             Echo.channel('test')
                 .listen('NewMessage', (e) => {
                     console.log(e);
                 });
-        }
+        },
+        created() {
+        Fire.$on('searching',() => {
+            let query = this.query;
+            axios.get('api/search/games?s=' + query)
+            .then((data) => {
+                this.gamesResult = data.data
+            })
+            .catch(() => {
+            });
+        })
+    }
     }
 </script>

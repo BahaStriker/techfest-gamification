@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\API;
 
+use Symfony\Component\HttpFoundation\Response;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\game;
@@ -39,7 +40,11 @@ class SearchController extends Controller
         if ($search = request()->input('s')) {
             $games = game::search($search)->get();
             if(!$games->isEmpty()){
-                return response()->json($games);
+                return response()->json([
+                    'data' => $games,
+                    'message' => 'Success',
+                    'status' => Response::HTTP_OK
+                ]);
             }
             else{
                 return response()->json(['message' => 'Sorry No Results Found!']);

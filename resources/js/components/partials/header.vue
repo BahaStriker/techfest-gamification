@@ -38,7 +38,7 @@ export default {
     }
   },
     methods: {
-        getUserData() { 
+        getUserData() {
             this.userData = this.userwindow.user || '';
         },
     },
