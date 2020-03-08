@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
+use App\UserScores;
 use Illuminate\Http\Request;
 use App\game;
+use Illuminate\Support\Facades\Auth;
 
 class GameController extends Controller
 {
@@ -63,5 +65,16 @@ class GameController extends Controller
     public function destroy($id)
     {
         //
+    }
+    public function score($game,$score,$id){
+        return UserScores::create([
+            'user_id'=>$id,
+            'game_id'=>$game,
+            'score'=>$score
+        ]);
+    }
+    public function getscore($game,$id)
+    {
+        return UserScores::where('user_id',$id)->where('game_id',$game)->sum('score');
     }
 }

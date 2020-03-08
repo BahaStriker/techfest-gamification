@@ -15,7 +15,7 @@ class GamesTableSeeder extends Seeder
             [
                 'name' => 'Game1',
                 'description' => 'bla bla bla bla',
-                'link' => 'https://edidact.org/uploads/ex/ex_149q34/index.html',
+                'link' => 'http://api.sloth-lab.com/3',
                 'type' => 1,
                 'thubnail' => 'game1.png',
                 'categ_id' => 1,
@@ -23,7 +23,7 @@ class GamesTableSeeder extends Seeder
             [
                 'name' => 'game2',
                 'description' => 'bla bla bla bla',
-                'link' => 'https://edidact.org/uploads/ex/ex_148q34/index.html',
+                'link' => 'http://api.sloth-lab.com/4',
                 'type' => 1,
                 'thubnail' => 'game2.png',
                 'categ_id' => 2,
@@ -31,7 +31,7 @@ class GamesTableSeeder extends Seeder
             [
                 'name' => 'game3',
                 'description' => 'bla bla bla bla',
-                'link' => 'https://edidact.org/uploads/ex/ex_147q34/index.html',
+                'link' => 'http://api.sloth-lab.com/5',
                 'type' => 1,
                 'thubnail' => 'game3.png',
                 'categ_id' => 2,
