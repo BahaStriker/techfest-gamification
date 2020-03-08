@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Auth::routes();
-
+Route::get('/event',function(){
+    broadcast(new \App\Events\NewMessage('hello master'));
+    return 'broadcasted';
+});
 Route::get('{any}', 'AppController@index')->where('any', '.*');

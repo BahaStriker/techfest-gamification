@@ -250,3 +250,13 @@
 
     </main>
 </template>
+<script>
+    export default {
+        mounted() {
+            Echo.channel('test')
+                .listen('NewMessage', (e) => {
+                    console.log(e);
+                });
+        }
+    }
+</script>
