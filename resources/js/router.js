@@ -4,8 +4,8 @@ import VueRouter from "vue-router";
 import home from "./components/home";
 import list from "./components/games/list";
 import index from "./components/games/index";
-import search from "./components/games/search";
 import profile from "./components/profile";
+import notfound from "./components/NotFound";
 
 
 Vue.use(VueRouter);
@@ -25,10 +25,10 @@ export default new VueRouter({
             meta: { requiresAuth: true }
         },
         {
-            path: "/search/:s",
-            component: search,
+            path: "*",
+            component: notfound,
             meta: { requiresAuth: false }
-        },
+        }
     ],
     mode: "history",
     linkExactActiveClass: "active"
