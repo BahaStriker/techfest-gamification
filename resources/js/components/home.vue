@@ -40,17 +40,16 @@
         <div class="container-fluid margin_120_0">
             <div class="main_title_2">
                 <span><em></em></span>
-                <h2>Udema Popular Courses</h2>
-                <p>Cum doctus civibus efficiantur in imperdiet deterruisset.</p>
+                <h2>Our Popular Games</h2>
+                <p>Enjoy educations with our unique games</p>
             </div>
             <div id="reccomended" class="owl-carousel owl-theme">
                 <div class="item">
                     <div class="box_grid">
                         <figure>
                             <a href="#0" class="wish_bt"></a>
-                            <a href="course-detail.html">
-                                <div class="preview"><span>Preview course</span></div><img src="http://via.placeholder.com/800x533/ccc/fff/course__list_1.jpg" class="img-fluid" alt=""></a>
-                            <div class="price">$39</div>
+                                <router-link exact to="/games/list">
+                                <div class="preview"><span>Preview course</span></div><img src="http://via.placeholder.com/800x533/ccc/fff/course__list_1.jpg" class="img-fluid" alt=""></router-link>
 
                         </figure>
                         <div class="wrapper">
@@ -180,7 +179,7 @@
             </div>
             <!-- /carousel -->
             <div class="container">
-                <p class="btn_home_align"><a href="courses-grid.html" class="btn_1 rounded">View all courses</a></p>
+                <p class="btn_home_align"><router-link exact to="/games/list" class="btn_1 rounded">View all games</router-link></p>
             </div>
             <!-- /container -->
             <hr>
