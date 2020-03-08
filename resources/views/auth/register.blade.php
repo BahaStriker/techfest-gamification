@@ -99,7 +99,7 @@
                     <div id="pass-info" class="clearfix"></div>
                 </div>
                 <button type="submit" class="btn_1 rounded full-width add_top_30">Register</button>
-                <div class="text-center add_top_10">Already have an acccount? <strong><a href="/">Sign In</a></strong>
+                <div class="text-center add_top_10">Already have an acccount? <strong><a href="/login">Sign In</a></strong>
                 </div>
             </form>
             <div class="copy">© 2020 SlothLab</div>
