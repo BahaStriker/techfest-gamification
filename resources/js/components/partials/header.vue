@@ -32,17 +32,17 @@ export default {
       userData: '',
     };
   },
-  computed: {
-    user() {
-      return window.user!== null
-    }
-  },
     methods: {
-        getUserData() {
-            this.userData = this.userwindow.user || '';
+        getUserData() { 
+            if(window.user)
+            {
+                this.userData = window.user;
+                this.isLoged = true;
+
+            }
         },
     },
-  created: () =>{
+  created () {
     this.getUserData();
   },
 };
