@@ -4,7 +4,7 @@
             <div class="wrapper">
                 <div class="container">
                     <h3>What would you learn?</h3>
-                    <p>Increase your expertise in business, technology and personal development</p>
+                    <p>Increase your reflexes, memory, objects and just have fun!</p>
                     <form>
                         <div id="custom-search-input">
                             <div class="input-group">

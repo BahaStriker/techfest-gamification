@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Udema a modern educational site template">
     <meta name="author" content="Ansonika">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>SlothLab | Modern Educational plateform</title>
 
     <!-- Favicons-->
@@ -47,7 +48,7 @@
     <Myfooter></Myfooter>
 </div>
 
-@auth 
+@auth
 <script>
     window.user = @json(Auth::user());
 </script>
