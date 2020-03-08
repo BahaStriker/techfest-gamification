@@ -38,7 +38,7 @@ class SearchController extends Controller
     public function show()
     {
         if ($search = request()->input('s')) {
-            $games = game::search($search)->get();
+            $games = game::search($search)->take(4)->get();
             if(!$games->isEmpty()){
                 return response()->json([
                     'data' => $games,

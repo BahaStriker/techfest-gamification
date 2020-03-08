@@ -10,7 +10,11 @@
                             <div class="input-group">
                                 <input type="text" class="search-query" placeholder="Search for your favorite game" v-model="query" @keyup="searchit">
                                 <input type="submit" class="btn_search" value="Search" @click.prevent="searchit">
-                                <div class="search-query" style="background-color:white;" v-show="gamesResult.message === 'Success'">{{gamesResult.message}}</div>
+                                <div v-if="gamesResult.status === 200" style="width: 90%;">
+                                    <div class="search-query text-left" style="background-color:white; width:100%; margin:1%" v-for="gameResult in gamesResult.data" :key="gameResult.id">
+                                        <a :href="'/games/'+gameResult.id"><img :src="'/img/' + gameResult.thubnail" height="50px" width="50px"/> {{gameResult.name}}</a>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
@@ -263,7 +267,7 @@ import _ from 'lodash';
         methods: {
             searchit: _.debounce(() => {
                 Fire.$emit('searching');
-            },3000),
+            },1000),
         },
         mounted() {
             Echo.channel('test')

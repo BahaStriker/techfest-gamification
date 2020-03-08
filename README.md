@@ -9,6 +9,15 @@
 - `php artisan key:generate`
 - `php artisan migrate`
 
+## Elastic
+ 
+```bash
+php artisan elastic:update-index "App\GameIndexConfigurator"
+```
+```bash
+php artisan elastic:migrate "App\game" my_index_v3
+```
+
 
 ## License
 
