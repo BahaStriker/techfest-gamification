@@ -8,11 +8,16 @@
                     <form>
                         <div id="custom-search-input">
                             <div class="input-group">
-                                <input type="text" class="search-query" placeholder="Search for your favorite game" v-model="query" @keyup="searchit">
+                                <input type="text" class="search-query" placeholder="Search for your favorite game"
+                                       v-model="query" @keyup="searchit">
                                 <input type="submit" class="btn_search" value="Search" @click.prevent="searchit">
                                 <div v-if="gamesResult.status === 200" style="width: 90%;">
-                                    <div class="search-query text-left" style="background-color:white; width:100%; margin:1%" v-for="gameResult in gamesResult.data" :key="gameResult.id">
-                                        <a :href="'/games/'+gameResult.id"><img :src="'/img/' + gameResult.thubnail" height="50px" width="50px"/> {{gameResult.name}}</a>
+                                    <div class="search-query text-left"
+                                         style="background-color:white; width:100%; margin:1%"
+                                         v-for="gameResult in gamesResult.data" :key="gameResult.id">
+                                        <a :href="'/games/'+gameResult.id"><img :src="'/img/' + gameResult.thubnail"
+                                                                                height="50px" width="50px"/>
+                                            {{gameResult.name}}</a>
                                     </div>
                                 </div>
                             </div>
@@ -41,155 +46,6 @@
         </div>
         <!-- /features -->
 
-        <div class="container-fluid margin_120_0">
-            <div class="main_title_2">
-                <span><em></em></span>
-                <h2>Our Popular Games</h2>
-                <p>Enjoy educations with our unique games</p>
-            </div>
-            <div id="reccomended" class="owl-carousel owl-theme">
-                <div class="item">
-                    <div class="box_grid">
-                        <figure>
-                            <a href="#0" class="wish_bt"></a>
-                                <router-link exact to="/games/list">
-                                <div class="preview"><span>Preview course</span></div><img src="http://via.placeholder.com/800x533/ccc/fff/course__list_1.jpg" class="img-fluid" alt=""></router-link>
-
-                        </figure>
-                        <div class="wrapper">
-                            <small>Category</small>
-                            <h3>Persius delenit has cu</h3>
-                            <p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu.</p>
-                            <div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></div>
-                        </div>
-                        <ul>
-                            <li><i class="icon_clock_alt"></i> 1h 30min</li>
-                            <li><i class="icon_like"></i> 890</li>
-                            <li><a href="course-detail.html">Enroll now</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- /item -->
-                <div class="item">
-                    <div class="box_grid">
-                        <figure>
-                            <a href="#0" class="wish_bt"></a>
-                            <a href="course-detail.html"><img src="http://via.placeholder.com/800x533/ccc/fff/course__list_2.jpg" class="img-fluid" alt=""></a>
-                            <div class="price">$45</div>
-                            <div class="preview"><span>Preview course</span></div>
-                        </figure>
-                        <div class="wrapper">
-                            <small>Category</small>
-                            <h3>Persius delenit has cu</h3>
-                            <p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu.</p>
-                            <div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></div>
-                        </div>
-                        <ul>
-                            <li><i class="icon_clock_alt"></i> 1h 30min</li>
-                            <li><i class="icon_like"></i> 890</li>
-                            <li><a href="course-detail.html">Enroll now</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- /item -->
-                <div class="item">
-                    <div class="box_grid">
-                        <figure>
-                            <a href="#0" class="wish_bt"></a>
-                            <a href="course-detail.html"><img src="http://via.placeholder.com/800x533/ccc/fff/course__list_3.jpg" class="img-fluid" alt=""></a>
-                            <div class="price">$54</div>
-                            <div class="preview"><span>Preview course</span></div>
-                        </figure>
-                        <div class="wrapper">
-                            <small>Category</small>
-                            <h3>Persius delenit has cu</h3>
-                            <p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu.</p>
-                            <div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></div>
-                        </div>
-                        <ul>
-                            <li><i class="icon_clock_alt"></i> 1h 30min</li>
-                            <li><i class="icon_like"></i> 890</li>
-                            <li><a href="course-detail.html">Enroll now</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- /item -->
-                <div class="item">
-                    <div class="box_grid">
-                        <figure>
-                            <a href="#0" class="wish_bt"></a>
-                            <a href="course-detail.html"><img src="http://via.placeholder.com/800x533/ccc/fff/course__list_4.jpg" class="img-fluid" alt=""></a>
-                            <div class="price">$27</div>
-                            <div class="preview"><span>Preview course</span></div>
-                        </figure>
-                        <div class="wrapper">
-                            <small>Category</small>
-                            <h3>Persius delenit has cu</h3>
-                            <p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu.</p>
-                            <div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></div>
-                        </div>
-                        <ul>
-                            <li><i class="icon_clock_alt"></i> 1h 30min</li>
-                            <li><i class="icon_like"></i> 890</li>
-                            <li><a href="course-detail.html">Enroll now</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- /item -->
-                <div class="item">
-                    <div class="box_grid">
-                        <figure>
-                            <a href="#0" class="wish_bt"></a>
-                            <a href="course-detail.html"><img src="http://via.placeholder.com/800x533/ccc/fff/course__list_5.jpg" class="img-fluid" alt=""></a>
-                            <div class="price">$35</div>
-                            <div class="preview"><span>Preview course</span></div>
-                        </figure>
-                        <div class="wrapper">
-                            <small>Category</small>
-                            <h3>Persius delenit has cu</h3>
-                            <p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu.</p>
-                            <div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></div>
-                        </div>
-                        <ul>
-                            <li><i class="icon_clock_alt"></i> 1h 30min</li>
-                            <li><i class="icon_like"></i> 890</li>
-                            <li><a href="course-detail.html">Enroll now</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- /item -->
-                <div class="item">
-                    <div class="box_grid">
-                        <figure>
-                            <a href="#0" class="wish_bt"></a>
-                            <a href="course-detail.html"><img src="http://via.placeholder.com/800x533/ccc/fff/course__list_6.jpg" class="img-fluid" alt=""></a>
-                            <div class="price">$54</div>
-                            <div class="preview"><span>Preview course</span></div>
-                        </figure>
-                        <div class="wrapper">
-                            <small>Category</small>
-                            <h3>Persius delenit has cu</h3>
-                            <p>Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu.</p>
-                            <div class="rating"><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star voted"></i><i class="icon_star"></i><i class="icon_star"></i> <small>(145)</small></div>
-                        </div>
-                        <ul>
-                            <li><i class="icon_clock_alt"></i> 1h 30min</li>
-                            <li><i class="icon_like"></i> 890</li>
-                            <li><a href="course-detail.html">Enroll now</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <!-- /item -->
-            </div>
-            <!-- /carousel -->
-            <div class="container">
-                <p class="btn_home_align"><router-link exact to="/games/list" class="btn_1 rounded">View all games</router-link></p>
-            </div>
-            <!-- /container -->
-            <hr>
-        </div>
-        <!-- /container -->
-
         <div class="container margin_30_95">
             <div class="main_title_2">
                 <span><em></em></span>
@@ -209,42 +65,19 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
+                    <tr v-for="ranker in rankers">
                         <td>
                             <div class="thumb_cart">
                                 <img src="http://via.placeholder.com/150x150/ccc/fff/thumb_cart_1.jpg" alt="Image">
                             </div>
-                            <span class="item_cart">Persius delenit has cu</span>
+                            <span class="item_cart">{{ranker.name}}</span>
                         </td>
                         <td>
-                            <strong>69 pt</strong>
+                            <strong>{{ranker.score_count}} pt</strong>
                         </td>
 
                     </tr>
-                    <tr>
-                        <td>
-                            <div class="thumb_cart">
-                                <img src="http://via.placeholder.com/150x150/ccc/fff/thumb_cart_1.jpg" alt="Image">
-                            </div>
-                            <span class="item_cart">Persius delenit has cu</span>
-                        </td>
-                        <td>
-                            <strong>69 pt</strong>
-                        </td>
 
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="thumb_cart">
-                                <img src="http://via.placeholder.com/150x150/ccc/fff/thumb_cart_1.jpg" alt="Image">
-                            </div>
-                            <span class="item_cart">Persius delenit has cu</span>
-                        </td>
-                        <td>
-                            <strong>69 pt</strong>
-                        </td>
-
-                    </tr>
                     </tbody>
                 </table>
                 <!-- /cart-options -->
@@ -256,35 +89,74 @@
     </main>
 </template>
 <script>
-import _ from 'lodash';
+    import _ from 'lodash';
+
     export default {
         data() {
-            return{
+            return {
                 query: "",
-                gamesResult: {}
+                gamesResult: {},
+                rankers: [],
+                games: [],
             }
         },
         methods: {
+            loadData() {
+                axios
+                    .get("/api/games")
+                    .then(data => {
+                        this.games = data.data.map(element => {
+                            return {
+                                id: element.id,
+                                name: element.name,
+                                type: element.type,
+                                category: element.categ_id == 1 ? "math" : "physics",
+                                thumbNail: "/../img/" + element.thubnail,
+                                description: element.description,
+                                link: element.id.toString()
+                            };
+                        });
+                    })
+                    .catch(err => {
+                        console.log(err);
+                    });
+            },
             searchit: _.debounce(() => {
                 Fire.$emit('searching');
-            },1000),
+            }, 1000),
+
+            ranking() {
+                console.log('you are here');
+                axios
+                    .get('/api/ranking')
+                    .then(data => {
+                        let res = data.data;
+                        this.rankers = res;
+
+
+                    })
+                    .catch()
+            }
         },
         mounted() {
             Echo.channel('test')
                 .listen('NewMessage', (e) => {
-                    console.log(e);
+                    this.ranking();
                 });
+
         },
         created() {
-        Fire.$on('searching',() => {
-            let query = this.query;
-            axios.get('api/search/games?s=' + query)
-            .then((data) => {
-                this.gamesResult = data.data
-            })
-            .catch(() => {
-            });
-        })
-    }
+            Fire.$on('searching', () => {
+                let query = this.query;
+                axios.get('api/search/games?s=' + query)
+                    .then((data) => {
+                        this.gamesResult = data.data
+                    })
+                    .catch(() => {
+                    });
+            }),
+                this.ranking();
+            this.loadData()
+        }
     }
 </script>

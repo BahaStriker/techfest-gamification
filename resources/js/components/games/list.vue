@@ -121,7 +121,7 @@ export default {
               name: element.name,
               type: element.type,
               category: element.categ_id == 1 ? "math" : "physics",
-              thumbNail: "/img/" + element.thubnail,
+              thumbNail: "/../img/" + element.thubnail,
               description: element.description,
               link: element.id.toString()
             };

@@ -22,3 +22,4 @@ Route::get('search/games', 'API\SearchController@show');
 Route::apiResources(['games' => 'API\GameController']);
 Route::post('score/{game}/{score}/{id}','API\GameController@score');
 Route::get('/user/score/{game}/{id}','API\GameController@getscore');
+Route::get('/ranking','API\GameController@ranking');

@@ -2294,7 +2294,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
             name: element.name,
             type: element.type,
             category: element.categ_id == 1 ? "math" : "physics",
-            thumbNail: "/img/" + element.thubnail,
+            thumbNail: "/../img/" + element.thubnail,
             description: element.description,
             link: element.id.toString()
           };
@@ -2431,200 +2431,66 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       query: "",
-      gamesResult: {}
+      gamesResult: {},
+      rankers: [],
+      games: []
     };
   },
   methods: {
+    loadData: function loadData() {
+      var _this = this;
+
+      axios.get("/api/games").then(function (data) {
+        _this.games = data.data.map(function (element) {
+          return {
+            id: element.id,
+            name: element.name,
+            type: element.type,
+            category: element.categ_id == 1 ? "math" : "physics",
+            thumbNail: "/../img/" + element.thubnail,
+            description: element.description,
+            link: element.id.toString()
+          };
+        });
+      })["catch"](function (err) {
+        console.log(err);
+      });
+    },
     searchit: lodash__WEBPACK_IMPORTED_MODULE_0___default.a.debounce(function () {
       Fire.$emit('searching');
-    }, 1000)
+    }, 1000),
+    ranking: function ranking() {
+      var _this2 = this;
+
+      console.log('you are here');
+      axios.get('/api/ranking').then(function (data) {
+        var res = data.data;
+        _this2.rankers = res;
+      })["catch"]();
+    }
   },
   mounted: function mounted() {
+    var _this3 = this;
+
     Echo.channel('test').listen('NewMessage', function (e) {
-      console.log(e);
+      _this3.ranking();
     });
   },
   created: function created() {
-    var _this = this;
+    var _this4 = this;
 
     Fire.$on('searching', function () {
-      var query = _this.query;
+      var query = _this4.query;
       axios.get('api/search/games?s=' + query).then(function (data) {
-        _this.gamesResult = data.data;
+        _this4.gamesResult = data.data;
       })["catch"](function () {});
-    });
+    }), this.ranking();
+    this.loadData();
   }
 });
 
@@ -54252,7 +54118,10 @@ var render = function() {
                                     width: "50px"
                                   }
                                 }),
-                                _vm._v(" " + _vm._s(gameResult.name))
+                                _vm._v(
+                                  "\n                                        " +
+                                    _vm._s(gameResult.name)
+                                )
                               ]
                             )
                           ]
@@ -54270,81 +54139,35 @@ var render = function() {
     _vm._v(" "),
     _vm._m(0),
     _vm._v(" "),
-    _c("div", { staticClass: "container-fluid margin_120_0" }, [
+    _c("div", { staticClass: "container margin_30_95" }, [
       _vm._m(1),
       _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "owl-carousel owl-theme", attrs: { id: "reccomended" } },
-        [
-          _c("div", { staticClass: "item" }, [
-            _c("div", { staticClass: "box_grid" }, [
-              _c(
-                "figure",
-                [
-                  _c("a", { staticClass: "wish_bt", attrs: { href: "#0" } }),
+      _c("div", { staticClass: "box_cart" }, [
+        _c("table", { staticClass: "table table-striped cart-list" }, [
+          _vm._m(2),
+          _vm._v(" "),
+          _c(
+            "tbody",
+            _vm._l(_vm.rankers, function(ranker) {
+              return _c("tr", [
+                _c("td", [
+                  _vm._m(3, true),
                   _vm._v(" "),
-                  _c(
-                    "router-link",
-                    { attrs: { exact: "", to: "/games/list" } },
-                    [
-                      _c("div", { staticClass: "preview" }, [
-                        _c("span", [_vm._v("Preview course")])
-                      ]),
-                      _c("img", {
-                        staticClass: "img-fluid",
-                        attrs: {
-                          src:
-                            "http://via.placeholder.com/800x533/ccc/fff/course__list_1.jpg",
-                          alt: ""
-                        }
-                      })
-                    ]
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _vm._m(2),
-              _vm._v(" "),
-              _vm._m(3)
-            ])
-          ]),
-          _vm._v(" "),
-          _vm._m(4),
-          _vm._v(" "),
-          _vm._m(5),
-          _vm._v(" "),
-          _vm._m(6),
-          _vm._v(" "),
-          _vm._m(7),
-          _vm._v(" "),
-          _vm._m(8)
-        ]
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "container" }, [
-        _c(
-          "p",
-          { staticClass: "btn_home_align" },
-          [
-            _c(
-              "router-link",
-              {
-                staticClass: "btn_1 rounded",
-                attrs: { exact: "", to: "/games/list" }
-              },
-              [_vm._v("View all games")]
-            )
-          ],
-          1
-        )
-      ]),
-      _vm._v(" "),
-      _c("hr")
-    ]),
-    _vm._v(" "),
-    _vm._m(9)
+                  _c("span", { staticClass: "item_cart" }, [
+                    _vm._v(_vm._s(ranker.name))
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("td", [
+                  _c("strong", [_vm._v(_vm._s(ranker.score_count) + " pt")])
+                ])
+              ])
+            }),
+            0
+          )
+        ])
+      ])
+    ])
   ])
 }
 var staticRenderFns = [
@@ -54388,52 +54211,23 @@ var staticRenderFns = [
     return _c("div", { staticClass: "main_title_2" }, [
       _c("span", [_c("em")]),
       _vm._v(" "),
-      _c("h2", [_vm._v("Our Popular Games")]),
+      _c("h2", [_vm._v("SlothLab Champions")]),
       _vm._v(" "),
-      _c("p", [_vm._v("Enjoy educations with our unique games")])
+      _c("p", [_vm._v("Complete your challenges and reach the top")])
     ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "wrapper" }, [
-      _c("small", [_vm._v("Category")]),
-      _vm._v(" "),
-      _c("h3", [_vm._v("Persius delenit has cu")]),
-      _vm._v(" "),
-      _c("p", [
-        _vm._v(
-          "Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu."
-        )
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "rating" }, [
-        _c("i", { staticClass: "icon_star voted" }),
-        _c("i", { staticClass: "icon_star voted" }),
-        _c("i", { staticClass: "icon_star voted" }),
-        _c("i", { staticClass: "icon_star" }),
-        _c("i", { staticClass: "icon_star" }),
+    return _c("thead", [
+      _c("tr", [
+        _c("th", [
+          _vm._v("\n                        Name\n                    ")
+        ]),
         _vm._v(" "),
-        _c("small", [_vm._v("(145)")])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("ul", [
-      _c("li", [
-        _c("i", { staticClass: "icon_clock_alt" }),
-        _vm._v(" 1h 30min")
-      ]),
-      _vm._v(" "),
-      _c("li", [_c("i", { staticClass: "icon_like" }), _vm._v(" 890")]),
-      _vm._v(" "),
-      _c("li", [
-        _c("a", { attrs: { href: "course-detail.html" } }, [
-          _vm._v("Enroll now")
+        _c("th", [
+          _vm._v("\n                        Score\n                    ")
         ])
       ])
     ])
@@ -54442,422 +54236,13 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "item" }, [
-      _c("div", { staticClass: "box_grid" }, [
-        _c("figure", [
-          _c("a", { staticClass: "wish_bt", attrs: { href: "#0" } }),
-          _vm._v(" "),
-          _c("a", { attrs: { href: "course-detail.html" } }, [
-            _c("img", {
-              staticClass: "img-fluid",
-              attrs: {
-                src:
-                  "http://via.placeholder.com/800x533/ccc/fff/course__list_2.jpg",
-                alt: ""
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "price" }, [_vm._v("$45")]),
-          _vm._v(" "),
-          _c("div", { staticClass: "preview" }, [
-            _c("span", [_vm._v("Preview course")])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "wrapper" }, [
-          _c("small", [_vm._v("Category")]),
-          _vm._v(" "),
-          _c("h3", [_vm._v("Persius delenit has cu")]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu."
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "rating" }, [
-            _c("i", { staticClass: "icon_star voted" }),
-            _c("i", { staticClass: "icon_star voted" }),
-            _c("i", { staticClass: "icon_star voted" }),
-            _c("i", { staticClass: "icon_star" }),
-            _c("i", { staticClass: "icon_star" }),
-            _vm._v(" "),
-            _c("small", [_vm._v("(145)")])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("ul", [
-          _c("li", [
-            _c("i", { staticClass: "icon_clock_alt" }),
-            _vm._v(" 1h 30min")
-          ]),
-          _vm._v(" "),
-          _c("li", [_c("i", { staticClass: "icon_like" }), _vm._v(" 890")]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "course-detail.html" } }, [
-              _vm._v("Enroll now")
-            ])
-          ])
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "item" }, [
-      _c("div", { staticClass: "box_grid" }, [
-        _c("figure", [
-          _c("a", { staticClass: "wish_bt", attrs: { href: "#0" } }),
-          _vm._v(" "),
-          _c("a", { attrs: { href: "course-detail.html" } }, [
-            _c("img", {
-              staticClass: "img-fluid",
-              attrs: {
-                src:
-                  "http://via.placeholder.com/800x533/ccc/fff/course__list_3.jpg",
-                alt: ""
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "price" }, [_vm._v("$54")]),
-          _vm._v(" "),
-          _c("div", { staticClass: "preview" }, [
-            _c("span", [_vm._v("Preview course")])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "wrapper" }, [
-          _c("small", [_vm._v("Category")]),
-          _vm._v(" "),
-          _c("h3", [_vm._v("Persius delenit has cu")]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu."
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "rating" }, [
-            _c("i", { staticClass: "icon_star voted" }),
-            _c("i", { staticClass: "icon_star voted" }),
-            _c("i", { staticClass: "icon_star voted" }),
-            _c("i", { staticClass: "icon_star" }),
-            _c("i", { staticClass: "icon_star" }),
-            _vm._v(" "),
-            _c("small", [_vm._v("(145)")])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("ul", [
-          _c("li", [
-            _c("i", { staticClass: "icon_clock_alt" }),
-            _vm._v(" 1h 30min")
-          ]),
-          _vm._v(" "),
-          _c("li", [_c("i", { staticClass: "icon_like" }), _vm._v(" 890")]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "course-detail.html" } }, [
-              _vm._v("Enroll now")
-            ])
-          ])
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "item" }, [
-      _c("div", { staticClass: "box_grid" }, [
-        _c("figure", [
-          _c("a", { staticClass: "wish_bt", attrs: { href: "#0" } }),
-          _vm._v(" "),
-          _c("a", { attrs: { href: "course-detail.html" } }, [
-            _c("img", {
-              staticClass: "img-fluid",
-              attrs: {
-                src:
-                  "http://via.placeholder.com/800x533/ccc/fff/course__list_4.jpg",
-                alt: ""
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "price" }, [_vm._v("$27")]),
-          _vm._v(" "),
-          _c("div", { staticClass: "preview" }, [
-            _c("span", [_vm._v("Preview course")])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "wrapper" }, [
-          _c("small", [_vm._v("Category")]),
-          _vm._v(" "),
-          _c("h3", [_vm._v("Persius delenit has cu")]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu."
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "rating" }, [
-            _c("i", { staticClass: "icon_star voted" }),
-            _c("i", { staticClass: "icon_star voted" }),
-            _c("i", { staticClass: "icon_star voted" }),
-            _c("i", { staticClass: "icon_star" }),
-            _c("i", { staticClass: "icon_star" }),
-            _vm._v(" "),
-            _c("small", [_vm._v("(145)")])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("ul", [
-          _c("li", [
-            _c("i", { staticClass: "icon_clock_alt" }),
-            _vm._v(" 1h 30min")
-          ]),
-          _vm._v(" "),
-          _c("li", [_c("i", { staticClass: "icon_like" }), _vm._v(" 890")]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "course-detail.html" } }, [
-              _vm._v("Enroll now")
-            ])
-          ])
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "item" }, [
-      _c("div", { staticClass: "box_grid" }, [
-        _c("figure", [
-          _c("a", { staticClass: "wish_bt", attrs: { href: "#0" } }),
-          _vm._v(" "),
-          _c("a", { attrs: { href: "course-detail.html" } }, [
-            _c("img", {
-              staticClass: "img-fluid",
-              attrs: {
-                src:
-                  "http://via.placeholder.com/800x533/ccc/fff/course__list_5.jpg",
-                alt: ""
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "price" }, [_vm._v("$35")]),
-          _vm._v(" "),
-          _c("div", { staticClass: "preview" }, [
-            _c("span", [_vm._v("Preview course")])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "wrapper" }, [
-          _c("small", [_vm._v("Category")]),
-          _vm._v(" "),
-          _c("h3", [_vm._v("Persius delenit has cu")]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu."
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "rating" }, [
-            _c("i", { staticClass: "icon_star voted" }),
-            _c("i", { staticClass: "icon_star voted" }),
-            _c("i", { staticClass: "icon_star voted" }),
-            _c("i", { staticClass: "icon_star" }),
-            _c("i", { staticClass: "icon_star" }),
-            _vm._v(" "),
-            _c("small", [_vm._v("(145)")])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("ul", [
-          _c("li", [
-            _c("i", { staticClass: "icon_clock_alt" }),
-            _vm._v(" 1h 30min")
-          ]),
-          _vm._v(" "),
-          _c("li", [_c("i", { staticClass: "icon_like" }), _vm._v(" 890")]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "course-detail.html" } }, [
-              _vm._v("Enroll now")
-            ])
-          ])
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "item" }, [
-      _c("div", { staticClass: "box_grid" }, [
-        _c("figure", [
-          _c("a", { staticClass: "wish_bt", attrs: { href: "#0" } }),
-          _vm._v(" "),
-          _c("a", { attrs: { href: "course-detail.html" } }, [
-            _c("img", {
-              staticClass: "img-fluid",
-              attrs: {
-                src:
-                  "http://via.placeholder.com/800x533/ccc/fff/course__list_6.jpg",
-                alt: ""
-              }
-            })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "price" }, [_vm._v("$54")]),
-          _vm._v(" "),
-          _c("div", { staticClass: "preview" }, [
-            _c("span", [_vm._v("Preview course")])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "wrapper" }, [
-          _c("small", [_vm._v("Category")]),
-          _vm._v(" "),
-          _c("h3", [_vm._v("Persius delenit has cu")]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "Id placerat tacimates definitionem sea, prima quidam vim no. Duo nobis persecuti cu."
-            )
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "rating" }, [
-            _c("i", { staticClass: "icon_star voted" }),
-            _c("i", { staticClass: "icon_star voted" }),
-            _c("i", { staticClass: "icon_star voted" }),
-            _c("i", { staticClass: "icon_star" }),
-            _c("i", { staticClass: "icon_star" }),
-            _vm._v(" "),
-            _c("small", [_vm._v("(145)")])
-          ])
-        ]),
-        _vm._v(" "),
-        _c("ul", [
-          _c("li", [
-            _c("i", { staticClass: "icon_clock_alt" }),
-            _vm._v(" 1h 30min")
-          ]),
-          _vm._v(" "),
-          _c("li", [_c("i", { staticClass: "icon_like" }), _vm._v(" 890")]),
-          _vm._v(" "),
-          _c("li", [
-            _c("a", { attrs: { href: "course-detail.html" } }, [
-              _vm._v("Enroll now")
-            ])
-          ])
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container margin_30_95" }, [
-      _c("div", { staticClass: "main_title_2" }, [
-        _c("span", [_c("em")]),
-        _vm._v(" "),
-        _c("h2", [_vm._v("SlothLab Champions")]),
-        _vm._v(" "),
-        _c("p", [_vm._v("Complete your challenges and reach the top")])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "box_cart" }, [
-        _c("table", { staticClass: "table table-striped cart-list" }, [
-          _c("thead", [
-            _c("tr", [
-              _c("th", [
-                _vm._v("\n                        Name\n                    ")
-              ]),
-              _vm._v(" "),
-              _c("th", [
-                _vm._v("\n                        Score\n                    ")
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("tbody", [
-            _c("tr", [
-              _c("td", [
-                _c("div", { staticClass: "thumb_cart" }, [
-                  _c("img", {
-                    attrs: {
-                      src:
-                        "http://via.placeholder.com/150x150/ccc/fff/thumb_cart_1.jpg",
-                      alt: "Image"
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("span", { staticClass: "item_cart" }, [
-                  _vm._v("Persius delenit has cu")
-                ])
-              ]),
-              _vm._v(" "),
-              _c("td", [_c("strong", [_vm._v("69 pt")])])
-            ]),
-            _vm._v(" "),
-            _c("tr", [
-              _c("td", [
-                _c("div", { staticClass: "thumb_cart" }, [
-                  _c("img", {
-                    attrs: {
-                      src:
-                        "http://via.placeholder.com/150x150/ccc/fff/thumb_cart_1.jpg",
-                      alt: "Image"
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("span", { staticClass: "item_cart" }, [
-                  _vm._v("Persius delenit has cu")
-                ])
-              ]),
-              _vm._v(" "),
-              _c("td", [_c("strong", [_vm._v("69 pt")])])
-            ]),
-            _vm._v(" "),
-            _c("tr", [
-              _c("td", [
-                _c("div", { staticClass: "thumb_cart" }, [
-                  _c("img", {
-                    attrs: {
-                      src:
-                        "http://via.placeholder.com/150x150/ccc/fff/thumb_cart_1.jpg",
-                      alt: "Image"
-                    }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("span", { staticClass: "item_cart" }, [
-                  _vm._v("Persius delenit has cu")
-                ])
-              ]),
-              _vm._v(" "),
-              _c("td", [_c("strong", [_vm._v("69 pt")])])
-            ])
-          ])
-        ])
-      ])
+    return _c("div", { staticClass: "thumb_cart" }, [
+      _c("img", {
+        attrs: {
+          src: "http://via.placeholder.com/150x150/ccc/fff/thumb_cart_1.jpg",
+          alt: "Image"
+        }
+      })
     ])
   }
 ]

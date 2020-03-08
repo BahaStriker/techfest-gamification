@@ -3831,7 +3831,7 @@ section#reviews {
 
 /*-------- 2.5 Login/register/admission--------*/
 #login_bg, #register_bg, #admission_bg {
-  background: url(../img/bg-login.jpg) center center no-repeat fixed;
+  background: url(../img/wallhaven-4vkrqp.jpg) center center no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -3841,7 +3841,7 @@ section#reviews {
 }
 
 #register_bg {
-  background: url(../img/bg-login.jpg) center center no-repeat fixed;
+  background: url(../img/wallhaven-4vkrqp.jpg) center center no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -3849,7 +3849,7 @@ section#reviews {
 }
 
 #admission_bg {
-  background: url(../img/bg-login.jpg) center center no-repeat fixed;
+  background: url(../img/wallhaven-4vkrqp.jpg) center center no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -4337,11 +4337,11 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   }
 
   .table.cart-list td:nth-of-type(1):before {
-    content: "Item";
+    content: "Name";
   }
 
   .table.cart-list td:nth-of-type(2):before {
-    content: "Discount";
+    content: "Score";
   }
 
   .table.cart-list td:nth-of-type(3):before {

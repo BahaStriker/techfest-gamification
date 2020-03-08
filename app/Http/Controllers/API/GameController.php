@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers\API;
 
+use App\Events\NewMessage;
 use App\Http\Controllers\Controller;
 use App\UserScores;
 use Illuminate\Http\Request;
 use App\game;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class GameController extends Controller
 {
@@ -67,14 +69,32 @@ class GameController extends Controller
         //
     }
     public function score($game,$score,$id){
-        return UserScores::create([
+        $scores=UserScores::create([
             'user_id'=>$id,
             'game_id'=>$game,
             'score'=>$score
         ]);
+        broadcast(new NewMessage('Score added'));
+        return response()->json($scores);
     }
     public function getscore($game,$id)
     {
-        return UserScores::where('user_id',$id)->where('game_id',$game)->sum('score');
+        $sum=UserScores::where('user_id',$id)->where('game_id',$game)->sum('score');
+        if ($sum>10)
+        {
+            return 10;
+        }
+        return $sum;
+    }
+    public function ranking()
+    {
+        return DB::table('user_scores')
+            ->select( 'users.name', \DB::raw('SUM(score) as score_count'))
+            ->join('users', 'users.id', '=', 'user_scores.user_id')
+            ->orderBy('score_count', 'desc')
+            ->groupBy('users.id')
+            ->take(3)
+            ->get();
+
     }
 }
