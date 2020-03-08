@@ -1516,7 +1516,7 @@ video {
     height: 450px;
   }
 }
-.hero_single.version_2:before {
+.hero_single.version_2 {
   background: url(/../img/wallhaven-4vkrqp.jpg) center center no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
