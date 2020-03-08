@@ -52146,7 +52146,7 @@ var staticRenderFns = [
             _c("p", [
               _c("img", {
                 attrs: {
-                  src: "img/logo.png",
+                  src: "/../img/logo.png",
                   width: "149",
                   height: "42",
                   "data-retina": "true",
