@@ -94,8 +94,7 @@ class GamesTableSeeder extends Seeder
             ],
 
         ];
-        foreach ($items as $item)
-        {
+        foreach ($items as $item) {
             \App\game::create($item);
         }
     }

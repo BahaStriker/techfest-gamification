@@ -9,7 +9,7 @@ class game extends Model
 {
     use Searchable;
 
-    protected $guarded =[];
+    protected $guarded = [];
 
     /**
      * @var string
@@ -29,11 +29,11 @@ class game extends Model
     protected $mapping = [
         'properties' => [
             'name' => [
-                'type' => 'text'
+                'type' => 'text',
             ],
             'description' => [
-                'type' => 'text'
+                'type' => 'text',
             ],
-        ]
+        ],
     ];
 }
