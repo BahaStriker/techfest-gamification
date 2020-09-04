@@ -3,9 +3,9 @@
 namespace App\Http\Controllers\API;
 
 use App\Events\NewMessage;
-use App\game;
+use App\Models\game;
 use App\Http\Controllers\Controller;
-use App\UserScores;
+use App\Models\UserScores;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
